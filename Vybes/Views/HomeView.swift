@@ -10,14 +10,15 @@ import SwiftUI
 struct HomeView: View {
     @State private var search: String = ""
     @State private var selectedIndex: Int = 1
-     
+    @ObservedObject var viewModel = ProducttViewModel()
+    
     private let categories = ["All Products", "Popular", "Recent", "Price", "Brand", "Qulity"]
     var body: some View {
         NavigationView {
             ZStack {
                 Color.white
                     .ignoresSafeArea()
-                 
+                LoadingView(isShowing: .constant(viewModel.isloading)) {
                 ScrollView (showsIndicators: false) {
                     VStack (alignment: .leading) {
                          
@@ -72,11 +73,11 @@ struct HomeView: View {
                          
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack (spacing: 0) {
-                                ForEach(popular) { i in
+                                ForEach(viewModel.productsLists, id: \.id) { result in
                                     NavigationLink(
-                                        destination: DetailScreen(viewmodel: i),
+                                        destination: DetailScreen(viewmodel: result),
                                         label: {
-                                            ProductCardView(image: Image(i.imageName), size: 210, title: i.title, rating: i.rating)
+                                            ProductCardView(image:result.images, size: 210, title: result.title, price: result.price)
                                         })
                                         .navigationBarHidden(true)
                                         .foregroundColor(.black)
@@ -84,10 +85,11 @@ struct HomeView: View {
                                 .padding(.leading)
                             }
                         }
-                        .padding(.bottom)  
+                        .padding(.bottom)
+                        Spacer().frame(height: 50)
                     }
                 }
-                 
+                }
                 VStack {
                     Spacer()
                     BottomNavBarView()

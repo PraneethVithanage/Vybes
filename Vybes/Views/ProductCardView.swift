@@ -6,29 +6,29 @@
 //
 
 import SwiftUI
- 
+
 struct ProductCardView: View {
-    let image: Image
+    let image: String
     let size: CGFloat
     let title: String
-    let rating: Int
+    let price: String
     var body: some View {
         VStack (alignment: .leading, spacing: 0) {
-            image
-                .resizable()
-                .frame(width: size, height: 200 * (size/210))
-                .cornerRadius(20.0)
+            Image(systemName: "mihcm-logo").data(url: URL(string: image as! String)!)
+                .scaledToFill()
+                .frame(width: 90,height: 70, alignment: .center)
+            
             Text(title).font(.title3).fontWeight(.bold)
-             
+            
             HStack  {
-                Text("$1299")
+                Text(price)
                     .font(.title3)
                     .fontWeight(.regular)
                     .foregroundColor(.gray)
                 Spacer()
                 
                 Button(action: {
-    
+                    
                 }) {
                     Image("add")
                         .resizable()
@@ -41,6 +41,17 @@ struct ProductCardView: View {
         .padding()
         .background(Color.gray.opacity(0.15))
         .cornerRadius(20.0)
-         
+        
+    }
+}
+
+extension Image {
+    func data(url:URL) -> Self {
+        if let data = try? Data(contentsOf: url) {
+            return Image(uiImage: UIImage(data: data)!)
+                .resizable()
+        }
+        return self
+            .resizable()
     }
 }

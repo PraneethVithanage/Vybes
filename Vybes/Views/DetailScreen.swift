@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailScreen: View {
     
-    let viewmodel: Furniture
+    let viewmodel: Product?
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
@@ -22,13 +22,14 @@ struct DetailScreen: View {
                             .resizable()
                             .aspectRatio(1,contentMode: .fit)
                             .edgesIgnoringSafeArea(.top)
-                        Image(viewmodel.imageName)
-                            .resizable()
+                        
+                        Image(systemName: "mihcm-logo").data(url: URL(string: viewmodel?.images as! String)!)
+                            .scaledToFill()
                             .frame(width: 200, height: 200)
                         
                     }
                 }
-                DescriptionView(title: viewmodel.title, rating: viewmodel.rating)
+                DescriptionView(rating: 2, viewmodel: viewmodel)
                 
             }
             .edgesIgnoringSafeArea(.top)
@@ -56,11 +57,11 @@ extension View {
     }
 }
 
-struct DetailScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailScreen(viewmodel: Furniture(id: 1, title: "Sofas", imageName: "1", rating: 5))
-    }
-}
+//struct DetailScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//       // DetailScreen(viewmodel: Furniture(id: 1, title: "Sofas", imageName: "1", rating: 5))
+//    }
+//}
 
 
 struct ColorDotView: View {
@@ -73,8 +74,8 @@ struct ColorDotView: View {
 }
 
 struct DescriptionView: View {
-    let title : String
     let rating : Int
+    let viewmodel: Product?
     
     @State var selected = -1
     @State var message = false
@@ -83,7 +84,7 @@ struct DescriptionView: View {
     var body: some View {
         VStack (alignment: .leading) {
             //                Title
-            Text(title)
+            Text(viewmodel?.title ?? "")
                 .font(.title)
                 .fontWeight(.bold)
             //                Rating
@@ -103,7 +104,7 @@ struct DescriptionView: View {
                     .padding(.leading, 8)
                 Spacer()
                 
-                Text("$56.34")
+                Text(viewmodel?.price ?? "")
                     .font(.title)
                     .foregroundColor(.black)
                 
@@ -115,7 +116,7 @@ struct DescriptionView: View {
             Text("Description")
                 .fontWeight(.medium)
                 .padding(.vertical, 8)
-            Text("A Mid-Century Modern Modern dining chair with arm rest inspired by Eiffel chair made from polycarbonate plastic and has metal legs.")
+            Text(viewmodel?.productDescription ?? "")
                 .font(.system(size: 14))
                 .lineSpacing(8.0)
                 .opacity(0.6)
@@ -126,7 +127,6 @@ struct DescriptionView: View {
                 
                 VStack{
                     Button(action: {
-                        stepCountminus()
                     }) {
                         Image("eye")
                             .resizable()
@@ -142,7 +142,6 @@ struct DescriptionView: View {
                 
                 VStack{
                     Button(action: {
-                        stepCountminus()
                     }) {
                         Image("sun")
                             .resizable()
@@ -158,7 +157,6 @@ struct DescriptionView: View {
                 
                 VStack{
                     Button(action: {
-                        stepCountminus()
                     }) {
                         Image("wifi")
                             .resizable()
@@ -195,13 +193,6 @@ struct DescriptionView: View {
         .background(Color.white)
         .cornerRadius(30, corners: [.topLeft, .topRight])
         .offset(x: 0, y: -30.0)
-    }
-    
-    func stepCount() {
-        count += 1
-    }
-    func stepCountminus() {
-        count -= 1
     }
 }
 
