@@ -29,7 +29,7 @@ struct DetailScreen: View {
                         
                     }
                 }
-                DescriptionView(rating: 2, viewmodel: viewmodel)
+                DescriptionView(rating: viewmodel?.rating ?? 0.0, viewmodel: viewmodel)
                 
             }
             .edgesIgnoringSafeArea(.top)
@@ -59,12 +59,6 @@ extension View {
     }
 }
 
-//struct DetailScreen_Previews: PreviewProvider {
-//    static var previews: some View {
-//       // DetailScreen(viewmodel: Furniture(id: 1, title: "Sofas", imageName: "1", rating: 5))
-//    }
-//}
-
 
 struct ColorDotView: View {
     let color: Color
@@ -76,7 +70,7 @@ struct ColorDotView: View {
 }
 
 struct DescriptionView: View {
-    let rating : Int
+    let rating : Double
     let viewmodel: Product?
     
     @State var selected = -1
@@ -101,7 +95,7 @@ struct DescriptionView: View {
                             self.message.toggle()
                         }
                 }
-                Text("(\(rating))")
+                Text("(\(Int(rating)))")
                     .opacity(0.5)
                     .padding(.leading, 8)
                 Spacer()
@@ -110,6 +104,9 @@ struct DescriptionView: View {
                     .font(.title)
                     .foregroundColor(.black)
                 
+            }
+            .onAppear{
+                self.selected = Int(rating) - 1
             }
             .alert(isPresented: $message) {
                 Alert(title: Text("Rating Submit"), message: Text("You Rated \(self.selected + 1) out of 5 Star Rating"), dismissButton: .none)

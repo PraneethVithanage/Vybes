@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var search: String = ""
-    @State private var selectedIndex: Int = 1
+    @State private var selectedIndex: Int = 0
     @ObservedObject var viewModel = ProducttViewModel()
     private let categories = ["All Products", "Popular", "Recent", "Price", "Brand", "Qulity"]
     var body: some View {
