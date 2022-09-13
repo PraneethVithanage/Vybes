@@ -9,18 +9,39 @@
 /* Begin PBXBuildFile section */
 		8448EDE628D0E3DE0056D85B /* VybesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD628D0E3DC0056D85B /* VybesApp.swift */; };
 		8448EDE728D0E3DE0056D85B /* VybesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD628D0E3DC0056D85B /* VybesApp.swift */; };
-		8448EDEA28D0E3DE0056D85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EDD828D0E3DE0056D85B /* Assets.xcassets */; };
-		8448EDEB28D0E3DE0056D85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EDD828D0E3DE0056D85B /* Assets.xcassets */; };
 		8448EDF928D0E4A30056D85B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDF828D0E4A30056D85B /* HomeView.swift */; };
+		8448EDFB28D0E5D80056D85B /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDFA28D0E5D80056D85B /* AppBarView.swift */; };
+		8448EDFD28D0E69A0056D85B /* TagLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDFC28D0E69A0056D85B /* TagLineView.swift */; };
+		8448EDFF28D0E6E70056D85B /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDFE28D0E6E70056D85B /* CategoryView.swift */; };
+		8448EE0128D0E7270056D85B /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0028D0E7270056D85B /* ProductCardView.swift */; };
+		8448EE0328D0E7610056D85B /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0228D0E7610056D85B /* DetailScreen.swift */; };
+		8448EE0528D0E7E30056D85B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0428D0E7E30056D85B /* AppModel.swift */; };
+		8448EE0728D0E8270056D85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EE0628D0E8270056D85B /* Assets.xcassets */; };
+		8448EE0928D0E9C50056D85B /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0828D0E9C50056D85B /* AppService.swift */; };
+		8448EE0B28D0EA160056D85B /*  MIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0A28D0EA160056D85B /*  MIError.swift */; };
+		8448EE0D28D0EA7D0056D85B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0C28D0EA7D0056D85B /* AppViewModel.swift */; };
+		8448EE0F28D0F6F00056D85B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0E28D0F6F00056D85B /* LoadingView.swift */; };
+		8448EE1128D0FE920056D85B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE1028D0FE920056D85B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8448EDD628D0E3DC0056D85B /* VybesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VybesApp.swift; sourceTree = "<group>"; };
-		8448EDD828D0E3DE0056D85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8448EDDD28D0E3DE0056D85B /* Vybes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EDE328D0E3DE0056D85B /* Vybes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EDE528D0E3DE0056D85B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8448EDF828D0E4A30056D85B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8448EDFA28D0E5D80056D85B /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		8448EDFC28D0E69A0056D85B /* TagLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineView.swift; sourceTree = "<group>"; };
+		8448EDFE28D0E6E70056D85B /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		8448EE0028D0E7270056D85B /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		8448EE0228D0E7610056D85B /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		8448EE0428D0E7E30056D85B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		8448EE0628D0E8270056D85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../testapp/Shared/Assets.xcassets; sourceTree = "<group>"; };
+		8448EE0828D0E9C50056D85B /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		8448EE0A28D0EA160056D85B /*  MIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MIError.swift"; sourceTree = "<group>"; };
+		8448EE0C28D0EA7D0056D85B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		8448EE0E28D0F6F00056D85B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8448EE1028D0FE920056D85B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +79,7 @@
 		8448EDD528D0E3DC0056D85B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8448EDD828D0E3DE0056D85B /* Assets.xcassets */,
+				8448EE0628D0E8270056D85B /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -84,6 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				8448EDF828D0E4A30056D85B /* HomeView.swift */,
+				8448EDFA28D0E5D80056D85B /* AppBarView.swift */,
+				8448EDFC28D0E69A0056D85B /* TagLineView.swift */,
+				8448EDFE28D0E6E70056D85B /* CategoryView.swift */,
+				8448EE0028D0E7270056D85B /* ProductCardView.swift */,
+				8448EE0228D0E7610056D85B /* DetailScreen.swift */,
+				8448EE0E28D0F6F00056D85B /* LoadingView.swift */,
+				8448EE1028D0FE920056D85B /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -91,6 +119,7 @@
 		8448EDF528D0E4180056D85B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8448EE0C28D0EA7D0056D85B /* AppViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -98,6 +127,8 @@
 		8448EDF628D0E4250056D85B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8448EE0428D0E7E30056D85B /* AppModel.swift */,
+				8448EE0A28D0EA160056D85B /*  MIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +136,7 @@
 		8448EDF728D0E42A0056D85B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8448EE0828D0E9C50056D85B /* AppService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -188,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EDEA28D0E3DE0056D85B /* Assets.xcassets in Resources */,
+				8448EE0728D0E8270056D85B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EDEB28D0E3DE0056D85B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +238,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8448EE0128D0E7270056D85B /* ProductCardView.swift in Sources */,
+				8448EE0928D0E9C50056D85B /* AppService.swift in Sources */,
 				8448EDF928D0E4A30056D85B /* HomeView.swift in Sources */,
 				8448EDE628D0E3DE0056D85B /* VybesApp.swift in Sources */,
+				8448EE0528D0E7E30056D85B /* AppModel.swift in Sources */,
+				8448EE0F28D0F6F00056D85B /* LoadingView.swift in Sources */,
+				8448EE0B28D0EA160056D85B /*  MIError.swift in Sources */,
+				8448EDFB28D0E5D80056D85B /* AppBarView.swift in Sources */,
+				8448EDFD28D0E69A0056D85B /* TagLineView.swift in Sources */,
+				8448EE0D28D0EA7D0056D85B /* AppViewModel.swift in Sources */,
+				8448EE1128D0FE920056D85B /* LoginView.swift in Sources */,
+				8448EE0328D0E7610056D85B /* DetailScreen.swift in Sources */,
+				8448EDFF28D0E6E70056D85B /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
