@@ -11,7 +11,8 @@ import SwiftUI
 struct VybesApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            //HomeView()
+            LoginView()
         }
     }
 }

@@ -34,6 +34,8 @@ struct DetailScreen: View {
             }
             .edgesIgnoringSafeArea(.top)
         }
+            .navigationViewStyle(.stack)
+            .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: BackButton(action: {presentationMode.wrappedValue.dismiss()}), trailing: Image(systemName: "lineweight"))
     }

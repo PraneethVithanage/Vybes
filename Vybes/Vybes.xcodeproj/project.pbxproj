@@ -21,6 +21,7 @@
 		8448EE0B28D0EA160056D85B /*  MIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0A28D0EA160056D85B /*  MIError.swift */; };
 		8448EE0D28D0EA7D0056D85B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0C28D0EA7D0056D85B /* AppViewModel.swift */; };
 		8448EE0F28D0F6F00056D85B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE0E28D0F6F00056D85B /* LoadingView.swift */; };
+		8448EE1128D0FE920056D85B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EE1028D0FE920056D85B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8448EE0A28D0EA160056D85B /*  MIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MIError.swift"; sourceTree = "<group>"; };
 		8448EE0C28D0EA7D0056D85B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		8448EE0E28D0F6F00056D85B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8448EE1028D0FE920056D85B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				8448EE0028D0E7270056D85B /* ProductCardView.swift */,
 				8448EE0228D0E7610056D85B /* DetailScreen.swift */,
 				8448EE0E28D0F6F00056D85B /* LoadingView.swift */,
+				8448EE1028D0FE920056D85B /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				8448EDFB28D0E5D80056D85B /* AppBarView.swift in Sources */,
 				8448EDFD28D0E69A0056D85B /* TagLineView.swift in Sources */,
 				8448EE0D28D0EA7D0056D85B /* AppViewModel.swift in Sources */,
+				8448EE1128D0FE920056D85B /* LoginView.swift in Sources */,
 				8448EE0328D0E7610056D85B /* DetailScreen.swift in Sources */,
 				8448EDFF28D0E6E70056D85B /* CategoryView.swift in Sources */,
 			);
