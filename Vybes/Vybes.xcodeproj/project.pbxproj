@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		8448EDE628D0E3DE0056D85B /* VybesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD628D0E3DC0056D85B /* VybesApp.swift */; };
 		8448EDE728D0E3DE0056D85B /* VybesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD628D0E3DC0056D85B /* VybesApp.swift */; };
-		8448EDE828D0E3DE0056D85B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD728D0E3DC0056D85B /* ContentView.swift */; };
-		8448EDE928D0E3DE0056D85B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDD728D0E3DC0056D85B /* ContentView.swift */; };
 		8448EDEA28D0E3DE0056D85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EDD828D0E3DE0056D85B /* Assets.xcassets */; };
 		8448EDEB28D0E3DE0056D85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EDD828D0E3DE0056D85B /* Assets.xcassets */; };
+		8448EDF928D0E4A30056D85B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EDF828D0E4A30056D85B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8448EDD628D0E3DC0056D85B /* VybesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VybesApp.swift; sourceTree = "<group>"; };
-		8448EDD728D0E3DC0056D85B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8448EDD828D0E3DE0056D85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8448EDDD28D0E3DE0056D85B /* Vybes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EDE328D0E3DE0056D85B /* Vybes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EDE528D0E3DE0056D85B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8448EDF828D0E4A30056D85B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,6 @@
 		8448EDD528D0E3DC0056D85B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8448EDD728D0E3DC0056D85B /* ContentView.swift */,
 				8448EDD828D0E3DE0056D85B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -85,6 +83,7 @@
 		8448EDF428D0E40B0056D85B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8448EDF828D0E4A30056D85B /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EDE828D0E3DE0056D85B /* ContentView.swift in Sources */,
+				8448EDF928D0E4A30056D85B /* HomeView.swift in Sources */,
 				8448EDE628D0E3DE0056D85B /* VybesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EDE928D0E3DE0056D85B /* ContentView.swift in Sources */,
 				8448EDE728D0E3DE0056D85B /* VybesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
