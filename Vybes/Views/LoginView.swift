@@ -82,25 +82,29 @@ struct LoginView: View {
                     .background(.blue)
                     .cornerRadius(10)
                     VStack{
-                        Spacer().frame(height: 20)
-                        Divider()
-                            .frame(height: 1)
-                            .background(Color.gray.opacity(0.3))
-                        Spacer().frame(height: 20)
-                    }
-                    Button("Continue With Facebook") {
-                        if username == "" || password == "" {
-                            showingAlert = true
-                            message = "Please fill the password and user name"
-                        } else {
-                            authenticateUser(username: username, password: password)
+                        VStack{
+                            Spacer().frame(height: 20)
+                            Divider()
+                                .frame(height: 1)
+                                .background(Color.gray.opacity(0.3))
+                            Spacer().frame(height: 20)
                         }
+                        Button("Continue With Facebook") {
+                            if username == "" || password == "" {
+                                showingAlert = true
+                                message = "Please fill the password and user name"
+                            } else {
+                                authenticateUser(username: username, password: password)
+                            }
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 40)
+                        .background(.blue)
+                        .cornerRadius(10)
+                        Text("Don't have an account? Join Now")
+                            .font(.system(size: 12))
+                            .fontWeight(.bold)
                     }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 40)
-                    .background(.blue)
-                    .cornerRadius(10)
-                    
                     NavigationLink(destination: HomeView(), isActive: $showingLoginScreen) {
                         EmptyView()
                     }
@@ -110,6 +114,7 @@ struct LoginView: View {
             Button("OK", role: .cancel) { }
         }
     }
+    
     
     func authenticateUser(username: String, password: String) {
         let index = users.firstIndex(of: username.lowercased()) ?? 0
